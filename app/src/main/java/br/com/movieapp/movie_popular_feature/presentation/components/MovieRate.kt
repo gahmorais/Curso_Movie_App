@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import br.com.movieapp.ui.theme.white
 
 @Composable
 fun MovieRate(
@@ -34,7 +35,11 @@ fun MovieRate(
       modifier = Modifier.size(12.dp)
     )
 
-    Text(text = rate.toString(), style = MaterialTheme.typography.body1, fontSize = 10.sp)
+    Text(
+      text = rate.toString(),
+      style = MaterialTheme.typography.body1.copy(color = white),
+      fontSize = 10.sp
+    )
   }
 }
 
